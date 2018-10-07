@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Copperplate", "Copperplate Gothic Light";
+}
+
+body {
+  width: 1024px;
+  margin: 0 auto;
+}
+.header {
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  background-color: rgb(64, 64, 64);
+}
+
+.main {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(255, 188, 121);
+  border-radius: 10px;
+}
+
+.photo {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  }
+
+.name {
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  display: inline-block;
+  width: 700px;
+  height: 204px;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(255, 188, 121);
+}
+
+.name p {
+  margin: 50px 0 0;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.name p + p {
+  margin: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.aside {
+  display: block;
+  float: left;
+  padding: 20px 10px;
+  width: 272px;
+}
+
+.contacts,
+.skills {
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.aside h2~div {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+  width: 260px;
+  height: 30px;
+}
+
+.contacts p,
+.skills p {
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 6px;
+  height: 24px;
+}
+
+.phone ::before,
+.skype ::before,
+.mail ::before,
+.html ::before,
+.css ::before,
+.js ::before,
+.git ::before,
+.sql ::before,
+.java ::before {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  content: " ";
+  display: inline-block;
+  width:24px;
+  height: 24px;
+}
+
+.phone ::before {
+  background: url("img/sprite1.png") 0px 0px;
+}
+
+.skype ::before {
+  background: url("img/sprite1.png") -24px 0px;
+}
+
+.mail ::before {
+  background: url("img/sprite1.png") -48px 0px;
+}
+
+
+.html ::before {
+  background: url("img/sprite1.png") -72px 0px;
+}
+
+.css ::before {
+  background: url("img/sprite1.png") -96px 0px;
+}
+
+.js ::before {
+  background: url("img/sprite1.png") -120px 0px;
+}
+
+.git ::before {
+  background: url("img/sprite1.png") -144px 0px;
+}
+
+.sql ::before {
+  background: url("img/sprite1.png") -168px 0px;
+}
+
+.java ::before {
+  background: url("img/sprite1.png") -196px 0px;
+}
+
+.main-section {
+  display: block;
+  padding: 10px;
+  float: right;
+  width: 707px;
+  background-color: rgb(249, 249, 249);
+  border-radius: 10px;
+  border-left: 3px dashed gold;
+}
+
+.summary,
+.education,
+.work,
+.english {
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 3px dashed gold;
+}
+
+.english{
+  border-bottom: none;
+}
+
+.main-section div[class$="pic"] {
+  position: absolute;
+  top: 6px;
+  display: inline-block;
+  width:32px;
+  height: 32px;
+}
+
+.sum-pic {
+  background: url("img/sprite2.png") 0px 0px;
+  left: 130px;
+}
+
+.ed-pic {
+  background: url("img/sprite2.png") -32px 0px;
+  left: 160px;
+}
+
+.work-pic {
+  background: url("img/sprite2.png") -64px 0px;
+  left: 240px;
+}
+
+.lang-pic {
+  background: url("img/sprite2.png") -96px 0px;
+  left: 200px;
+}
